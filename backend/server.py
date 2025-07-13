@@ -24,7 +24,7 @@ client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
 # Create the main app
-app = FastAPI(title="FreeJobAlert API", version="1.0.0")
+app = FastAPI(title="Government Job Portal API", version="1.0.0")
 api_router = APIRouter(prefix="/api")
 
 # Add CORS middleware
