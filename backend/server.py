@@ -455,7 +455,7 @@ app.include_router(api_router)
 # Basic route
 @api_router.get("/")
 async def root():
-    return {"message": "FreeJobAlert API is running!"}
+    return {"message": "Government Job Portal API is running!"}
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
