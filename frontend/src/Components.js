@@ -1543,8 +1543,8 @@ const Footer = () => {
         </div>
         <div className="border-t border-gray-700 mt-6 pt-6 text-center">
           <p className="text-gray-400 text-sm">
-            © 2025 FreeJobAlert.com. All rights reserved. | 
-            <span className="text-red-400"> Beware of duplicate websites with FreeJobAlert name.</span>
+            © 2025 Government Job Portal. All rights reserved. | 
+            <span className="text-red-400"> Your trusted source for government job opportunities.</span>
           </p>
         </div>
       </div>
