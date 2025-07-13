@@ -185,7 +185,7 @@ class EmailService:
                 
                 <p>We'll notify you about any updates regarding this position.</p>
                 
-                <p>Best regards,<br>The FreeJobAlert Team</p>
+                <p>Best regards,<br>The Government Job Portal Team</p>
             </div>
         </body>
         </html>
