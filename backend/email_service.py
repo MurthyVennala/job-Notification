@@ -140,11 +140,11 @@ class EmailService:
                     </a>
                 </div>
                 
-                <p>Best regards,<br>The FreeJobAlert Team</p>
+                <p>Best regards,<br>The Government Job Portal Team</p>
             </div>
             
             <div style="background: #f9fafb; padding: 15px; text-align: center; font-size: 12px; color: #6b7280;">
-                <p>© 2025 FreeJobAlert.com - All rights reserved</p>
+                <p>© 2025 Government Job Portal - All rights reserved</p>
                 <p><a href="#" style="color: #6b7280;">Unsubscribe</a> | <a href="#" style="color: #6b7280;">Update Preferences</a></p>
             </div>
         </body>
