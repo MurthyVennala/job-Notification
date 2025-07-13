@@ -37,19 +37,19 @@ class EmailService:
     
     async def send_welcome_email(self, user: User) -> bool:
         """Send welcome email to new user."""
-        subject = "Welcome to FreeJobAlert - Your Gateway to Government Jobs!"
+        subject = "Welcome to Government Job Portal - Your Gateway to Government Jobs!"
         
         content = f"""
         <html>
         <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <div style="background: linear-gradient(135deg, #2563eb, #1e40af); padding: 20px; text-align: center;">
-                <h1 style="color: white; margin: 0;">Welcome to FreeJobAlert!</h1>
+                <h1 style="color: white; margin: 0;">Welcome to Government Job Portal!</h1>
             </div>
             
             <div style="padding: 20px;">
                 <h2>Hello {user.full_name},</h2>
                 
-                <p>Thank you for joining FreeJobAlert, India's leading government job portal!</p>
+                <p>Thank you for joining Government Job Portal, India's leading government job portal!</p>
                 
                 <p>Here's what you can do with your account:</p>
                 <ul>
