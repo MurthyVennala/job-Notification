@@ -74,11 +74,11 @@ class EmailService:
                     </a>
                 </div>
                 
-                <p>Best regards,<br>The FreeJobAlert Team</p>
+                <p>Best regards,<br>The Government Job Portal Team</p>
             </div>
             
             <div style="background: #f9fafb; padding: 15px; text-align: center; font-size: 12px; color: #6b7280;">
-                <p>© 2025 FreeJobAlert.com - All rights reserved</p>
+                <p>© 2025 Government Job Portal - All rights reserved</p>
                 <p>You received this email because you registered on our platform.</p>
             </div>
         </body>
