@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 class EmailService:
     def __init__(self):
         self.api_key = os.getenv("SENDGRID_API_KEY")
-        self.from_email = os.getenv("FROM_EMAIL", "noreply@freejobalert.com")
+        self.from_email = os.getenv("FROM_EMAIL", "noreply@governmentjobportal.com")
         self.sg = SendGridAPIClient(api_key=self.api_key) if self.api_key else None
         
     async def send_email(self, to_email: str, subject: str, content: str) -> bool:
