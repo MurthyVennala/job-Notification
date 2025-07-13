@@ -22,11 +22,11 @@ const Header = ({ user, logout, searchJobs }) => {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2 cursor-pointer" onClick={() => navigate('/')}>
               <div className="bg-blue-600 p-2 rounded">
-                <span className="text-white font-bold text-lg">FJA</span>
+                <span className="text-white font-bold text-lg">GJP</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold">FreeJobAlert.Com</h1>
-                <p className="text-sm text-gray-300">Government Exam Result Admit Card</p>
+                <h1 className="text-xl font-bold">Government Job Portal</h1>
+                <p className="text-sm text-gray-300">Latest Government Jobs, Results & Admit Cards</p>
               </div>
             </div>
           </div>
