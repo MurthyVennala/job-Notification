@@ -1,5 +1,6 @@
 import os
 from typing import List
+from datetime import datetime
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Email, To, Content
 import logging
