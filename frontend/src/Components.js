@@ -1208,7 +1208,7 @@ const AdminPanel = ({ API, user }) => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-800">Admin Panel</h1>
+        <h1 className="text-3xl font-bold text-gray-800">Admin Panel - Government Job Portal</h1>
         <p className="text-gray-600">Manage jobs, users, and system settings</p>
       </div>
 
