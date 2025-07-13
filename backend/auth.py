@@ -45,10 +45,12 @@ async def get_user_by_email(db: AsyncIOMotorClient, email: str) -> Optional[User
 
 async def authenticate_user(db: AsyncIOMotorClient, email: str, password: str) -> Optional[User]:
     """Authenticate user with email and password."""
-    user = await get_user_by_email(db, email)
-    if not user:
+    user_data = await db.users.find_one({"email": email})
+    if not user_data:
         return None
-    if not verify_password(password, user.hashed_password):
+    
+    user = User(**user_data)
+    if not verify_password(password, user_data.get('hashed_password', '')):
         return None
     return user
 
