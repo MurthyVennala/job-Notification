@@ -1,38 +1,255 @@
+/* FreeJobAlert Clone Styling */
 .App {
-    text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 4px;
 }
 
-.App-link {
-    color: #61dafb;
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Header animations */
+.header-logo:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Navigation hover effects */
+.nav-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.nav-item:hover::before {
+  left: 100%;
+}
+
+/* Card hover effects */
+.job-card {
+  transition: all 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Button animations */
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+/* Notification list styling */
+.notification-item {
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  margin: 2px 0;
+  border-radius: 4px;
+}
+
+.notification-item:hover {
+  background-color: #eff6ff;
+  border-left-color: #2563eb;
+  transform: translateX(5px);
+}
+
+/* State selection animation */
+.state-selector {
+  position: relative;
+}
+
+.state-selector select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+/* Category cards animation */
+.category-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.category-card:hover::before {
+  left: 100%;
+}
+
+.category-card:hover {
+  transform: scale(1.02);
+}
+
+/* Loading animation for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img:hover {
+  opacity: 0.9;
+}
+
+/* Responsive text scaling */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .job-title {
+    font-size: 0.75rem !important;
+  }
+}
+
+/* Pulse animation for new notifications */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.new-notification {
+  animation: pulse 2s infinite;
+}
+
+/* Gradient backgrounds */
+.gradient-blue {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
+.gradient-green {
+  background: linear-gradient(135deg, #059669, #047857);
+}
+
+.gradient-orange {
+  background: linear-gradient(135deg, #ea580c, #c2410c);
+}
+
+.gradient-red {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+}
+
+/* WhatsApp button styling */
+.whatsapp-btn {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  position: relative;
+  overflow: hidden;
+}
+
+.whatsapp-btn::before {
+  content: '📱';
+  position: absolute;
+  left: -30px;
+  transition: left 0.3s ease;
+}
+
+.whatsapp-btn:hover::before {
+  left: 10px;
+}
+
+/* Footer styling */
+.footer-link {
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #60a5fa !important;
+}
+
+/* Alert banner styling */
+.alert-banner {
+  background: linear-gradient(45deg, #fef3c7, #fed7aa);
+  border-left: 4px solid #f59e0b;
+  animation: slideInDown 0.5s ease-out;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Custom focus styles */
+button:focus, select:focus, a:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Table styling for job listings */
+.job-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.job-table th,
+.job-table td {
+  border: 1px solid #d1d5db;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.job-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+.job-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.job-table tr:hover {
+  background-color: #eff6ff;
 }
