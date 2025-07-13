@@ -1505,7 +1505,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div>
-            <h4 className="font-bold mb-4">About FreeJobAlert</h4>
+            <h4 className="font-bold mb-4">About Government Job Portal</h4>
             <p className="text-gray-300 text-sm">
               India's leading government job portal providing latest job notifications, 
               admit cards, and results for all competitive exams.
